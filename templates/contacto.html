@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 
-
 {% block body %}
 
     <section class="contact-form">
@@ -18,10 +17,11 @@
           <label for="mensaje">Mensaje:</label>
           <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
         </div>
+        <!-- Agregar el widget de reCAPTCHA -->
+        <div class="g-recaptcha" data-sitekey="TU_CLAVE_DEL_SITIO_RECAPTCHA"></div>
         <button type="submit">Enviar</button>
       </form>
     </section>
-
 
     <section class="team-list">
       <h2>Nuestro equipo</h2>
@@ -35,5 +35,4 @@
         {% endif %}
       </ul>
     </section>
-  </div>
 {% endblock %}
